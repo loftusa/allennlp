@@ -8,7 +8,7 @@ if os.environ.get("ALLENNLP_DEBUG"):
 else:
     LEVEL = logging.INFO
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(os.path.join(__file__, os.pardir))))
+sys.path.insert(0, os.path.dirname(os.path.abspath(os.path.join(os.pardir, __file__))))
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(name)s - %(message)s',
                     level=LEVEL)
 
